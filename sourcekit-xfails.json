@@ -1,0 +1,930 @@
+[
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "Alamofire/Source/Alamofire.swift",
+    "offset": 2019,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 9,
+    "file": "Alamofire/Source/Alamofire.swift",
+    "offset": 3719,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "AsyncNinja/Sources/BaseProducer.swift",
+    "offset": 1745,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "AsyncNinja/Sources/BaseProducer.swift",
+    "offset": 1773,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "BlueSocket/Sources/SocketProtocols.swift",
+    "offset": 3726,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/41071587"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "BlueSocket/Sources/Socket.swift",
+    "offset": 30861,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 12,
+    "file": "Chatto/Chatto/Source/Chat Items/ChatItemCompanion.swift",
+    "offset": 1580,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "CleanroomLogger/Sources/BasicLogConfiguration.swift",
+    "offset": 3132,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 8,
+    "file": "CleanroomLogger/Sources/ConcatenatingLogFormatter.swift",
+    "offset": 2348,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "CoreStore/Sources/AsynchronousDataTransaction.swift",
+    "offset": 2119,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 22,
+    "file": "CoreStore/Sources/CSDataStack+Observing.swift",
+    "offset": 3048,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 13,
+    "file": "cub/Sources/Cub/AST/Nodes/ArrayNode.swift",
+    "offset": 758,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "request": "CursorInfo",
+    "failure": "crashed",
+    "file": "DNS/Sources/DNS/Bytes.swift",
+    "offset": 2565,
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 16,
+    "file": "DNS/Sources/DNS/Bytes.swift",
+    "offset": 6663,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 24,
+    "file": "Deferred/Sources/Deferred/Deferred.swift",
+    "offset": 2331,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Deferred/Sources/Task/TaskAndThen.swift",
+    "offset": 2614,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 18,
+    "file": "Evergreen/submodules/RSCore/RSCore/RSToolbarItem.swift",
+    "offset": 1174,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "Evergreen/submodules/RSParser/Sources/Feeds/FeedType.swift",
+    "offset": 705,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 17,
+    "file": "Evergreen/submodules/RSDatabase/RSDatabase/DatabaseObject.swift",
+    "offset": 649,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 24,
+    "file": "Evergreen/submodules/RSWeb/RSWeb/DownloadSession.swift",
+    "offset": 3145,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Evergreen/Frameworks/Data/DatabaseID.swift",
+    "offset": 488,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 34,
+    "file": "Evergreen/Frameworks/Data/UnreadCountProvider.swift",
+    "offset": 933,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "Evergreen/Frameworks/Database/ArticlesTable.swift",
+    "offset": 3547,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "Evergreen/Frameworks/Account/Account.swift",
+    "offset": 4496,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 24,
+    "file": "Evergreen/Frameworks/Account/Account.swift",
+    "offset": 2653,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "Evergreen/Commands/DeleteFromSidebarCommand.swift",
+    "offset": 2405,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 20,
+    "file": "Evergreen/Commands/DeleteFromSidebarCommand.swift",
+    "offset": 2831,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "request": "SemanticRefactoring",
+    "refactoring": "Convert To Trailing Closure",
+    "file": "exercism-*swift/exercises/word-count/Sources/WordCountExample.swift",
+    "offset": 97,
+    "issue": "rdar://problem/41093898"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "exercism-*swift/exercises/acronym/Sources/AcronymExample.swift",
+    "offset": 913,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "fluent/Sources/Fluent/Cache/CacheEntry.swift",
+    "offset": 534,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/41262612"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "fluent/Sources/FluentBenchmark/Benchmarks/Bar.swift",
+    "offset": 240,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/41262612"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "GRDB.swift/GRDB/Core/Cursor.swift",
+    "offset": 22555,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "IBAnimatable/Sources/ActivityIndicators/Animations/ActivityIndicatorAnimationBallBeat.swift",
+    "offset": 2007,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "IBAnimatable/Sources/ActivityIndicators/Animations/ActivityIndicatorAnimationBallPulseRise.swift",
+    "offset": 2460,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/42639255"
+  },
+  {
+    "branches": ["master"],
+    "request": "CursorInfo",
+    "failure": "crashed",
+    "file": "JSQDataSourcesKit/Source/DataSourceProtocol.swift",
+    "offset": 2024,
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "JSQDataSourcesKit/Source/ReusableViewConfig.swift",
+    "offset": 6930,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/41175473"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 26,
+    "file": "KeychainAccess/Lib/KeychainAccess/Keychain.swift",
+    "offset": 18237,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "request": "CursorInfo",
+    "failure": "crashed",
+    "file": "Kickstarter-Prelude/Prelude/Array.swift",
+    "offset": 2127,
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Kickstarter-Prelude/Prelude/Optional.swift",
+    "offset": 1585,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/41219750"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Kickstarter-ReactiveExtensions/Frameworks/ReactiveSwift/Sources/Action.swift",
+    "offset": 3959,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/42448618"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "Kingfisher/Sources/AnimatedImageView.swift",
+    "offset": 2897,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Kingfisher/Sources/Image.swift",
+    "offset": 21272,
+    "request": "CursorInfo",
+    "issue": "<issue url>"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "failed",
+    "request": "SemanticRefactoring",
+    "refactoring": "Local Rename",
+    "file": "Kitura/Sources/Kitura/CodableRouter.swift",
+    "offset": 45420,
+    "issue": "rdar://problem/41229086"
+  },
+  {
+    "branches": ["master"],
+    "request": "CursorInfo",
+    "failure": "crashed",
+    "file": "Kitura/Sources/Kitura/CodableRouter+TypeSafeMiddleware.swift",
+    "offset": 2343,
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["master"],
+    "request": "CursorInfo",
+    "failure": "crashed",
+    "file": "Kronos/Sources/DNSResolver.swift",
+    "offset": 1694,
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Kronos/Sources/DNSResolver.swift",
+    "offset": 3012,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 16,
+    "file": "Lark/Sources/Lark/Client.swift",
+    "offset": 6608,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 9,
+    "file": "Lark/Sources/CodeGenerator/Generator.swift",
+    "offset": 5239,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 16,
+    "file": "Moya/Sources/Moya/AnyEncodable.swift",
+    "offset": 233,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Moya/Sources/ReactiveMoya/MoyaProvider+Reactive.swift",
+    "offset": 382,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/42448618"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Moya/Sources/RxMoya/MoyaProvider+Rx.swift",
+    "offset": 1536,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/42448618"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "NetService/Sources/NetService/Compat.swift",
+    "offset": 77,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/41217187"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "SemanticRefactoring",
+    "failure": "crashed",
+    "refactoring": "Convert To Trailing Closure",
+    "file": "launchscreensnapshot/LaunchScreenSnapshot/LaunchScreenSnapshot.swift",
+    "offset": 8942,
+    "issue": "rdar://problem/41093898"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "ObjectMapper/Sources/DictionaryTransform.swift",
+    "offset": 626,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/42596313"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Perfect/Sources/PerfectLib/Dir.swift",
+    "offset": 2466,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 11,
+    "file": "Plank/Sources/Core/FileGenerator.swift",
+    "offset": 1744,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "ProcedureKit/Sources/ProcedureKit/Any.swift",
+    "offset": 1387,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 11,
+    "file": "ProcedureKit/Sources/ProcedureKit/Any.swift",
+    "offset": 3649,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "PromiseKit/Sources/AnyPromise.swift",
+    "offset": 5184,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "PromiseKit/Sources/AnyPromise.swift",
+    "offset": 5252,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/41217187"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 19,
+    "file": "R.swift/Sources/RswiftCore/Generators/AggregatedStructGenerator.swift",
+    "offset": 675,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "CursorInfo",
+    "failure": "crashed",
+    "file": "Re-Lax/ReLax/ReLax/DataHelpers.swift",
+    "offset": 145,
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "Re-Lax/ReLax/ReLax/LCRFlattenedRendition.swift",
+    "offset": 1537,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "ReactiveCocoa/ReactiveCocoa/NSObject+Association.swift",
+    "offset": 3699,
+    "request": "CodeComplete",
+    "issue": "https://bugs.swift.org/browse/SR-8397"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "ReactiveCocoa/ReactiveCocoa/AppKit/ActionProxy.swift",
+    "offset": 391,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "ReactiveSwift/Sources/Action.swift",
+    "offset": 4431,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "ReactiveSwift/Sources/Action.swift",
+    "offset": 5419,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+{
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 26,
+    "file": "Result/Result/Result.swift",
+    "offset": 7559,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "RxSwift/RxSwift/Concurrency/AsyncLock.swift",
+    "offset": 1036,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "RxSwift/Platform/DispatchQueue+Extensions.swift",
+    "offset": 329,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["master"],
+    "request": "CursorInfo",
+    "failure": "crashed",
+    "file": "SRP/Sources/Client.swift",
+    "offset": 3090,
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 29,
+    "file": "Serpent/Sources/BridgingBox.swift",
+    "offset": 1015,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "Sourcery/Sources/SourceryRuntime/Diffable.swift",
+    "offset": 3072,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 15,
+    "file": "Starscream/Sources/WebSocket.swift",
+    "offset": 26364,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "SwiftDate/Sources/DateRepresentable.swift",
+    "offset": 11081,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 12,
+    "file": "SwiftDate/Sources/DateRepresentable.swift",
+    "offset": 17648,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "request": "CursorInfo",
+    "failure": "crashed",
+    "file": "SwiftGraph/Sources/SwiftGraph/Cycle.swift",
+    "offset": 1388,
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 14,
+    "file": "SwiftGraph/Sources/SwiftGraph/Cycle.swift",
+    "offset": 3256,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "SwiftLint/Source/SwiftLintFramework/Extensions/Configuration+Cache.swift",
+    "offset": 797,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 26,
+    "file": "SwiftLint/Source/swiftlint/Commands/GenerateDocsCommand.swift",
+    "offset": 702,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "SwifterSwift/Sources/Extensions/SwiftStdlib/CharacterExtensions.swift",
+    "offset": 3695,
+    "request": "CodeComplete",
+    "issue": "https://bugs.swift.org/browse/SR-8396"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 26,
+    "file": "SwifterSwift/Sources/Extensions/UIKit/UIAlertControllerExtensions.swift",
+    "offset": 3935,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOConcurrencyHelpers/lock.swift",
+    "offset": 2633,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOPriorityQueue/PriorityQueue.swift",
+    "offset": 902,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIO/BaseSocket.swift",
+    "offset": 1226,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIO/BaseSocket.swift",
+    "offset": 13934,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOEchoServer/main.swift",
+    "offset": 2692,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 16,
+    "file": "swift-nio/Sources/NIOEchoServer/main.swift",
+    "offset": 2116,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOChatClient/main.swift",
+    "offset": 1522,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 16,
+    "file": "swift-nio/Sources/NIOChatClient/main.swift",
+    "offset": 1454,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOEchoClient/main.swift",
+    "offset": 2200,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 16,
+    "file": "swift-nio/Sources/NIOEchoClient/main.swift",
+    "offset": 2132,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOChatServer/main.swift",
+    "offset": 6295,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 17,
+    "file": "swift-nio/Sources/NIOChatServer/main.swift",
+    "offset": 3542,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOHTTP1/HTTPDecoder.swift",
+    "offset": 2212,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOHTTP1/HTTPDecoder.swift",
+    "offset": 8123,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOHTTP1Server/main.swift",
+    "offset": 23695,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 16,
+    "file": "swift-nio/Sources/NIOHTTP1Server/main.swift",
+    "offset": 23081,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOPerformanceTester/main.swift",
+    "offset": 4028,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 16,
+    "file": "swift-nio/Sources/NIOPerformanceTester/main.swift",
+    "offset": 4352,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOWebSocket/WebSocketFrame.swift",
+    "offset": 9369,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "swift-nio/Sources/NIOWebSocketServer/main.swift",
+    "offset": 8969,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 16,
+    "file": "swift-nio/Sources/NIOWebSocketServer/main.swift",
+    "offset": 7736,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "SwiftyStoreKit/SwiftyStoreKit/AppleReceiptValidator.swift",
+    "offset": 2402,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 30,
+    "file": "SwiftyStoreKit/SwiftyStoreKit/CompleteTransactionsController.swift",
+    "offset": 2818,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "URBNJSONDecodableSPM/Sources/JSONDecodable.swift",
+    "offset": 3635,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/41175473"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"],
+    "failure": "failed",
+    "request": "SemanticRefactoring",
+    "refactoring": "Local Rename",
+    "file": "mapper/Sources/Mapper.swift",
+    "offset": 1650,
+    "issue": "rdar://problem/41229086"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "panelkit/PanelKit/Controller/PanelNavigationController.swift",
+    "offset": 629,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "request": "RangeInfo",
+    "failure": "crashed",
+    "length": 24,
+    "file": "panelkit/PanelKit/Controller/PanelViewController+Dragging.swift",
+    "offset": 379,
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",
+    "file": "siesta/Source/Siesta/Configuration.swift",
+    "offset": 2770,
+    "request": "CursorInfo",
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
+    "failure": "crashed",
+    "file": "siesta/Source/Siesta/Entity.swift",
+    "offset": 7210,
+    "request": "CodeComplete",
+    "issue": "rdar://problem/41219750"
+  }
+]
