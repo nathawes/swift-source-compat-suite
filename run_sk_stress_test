@@ -324,6 +324,7 @@ class StressTesterRunner(object):
 
     def run(self, projects_json, swift_branch, extra_runner_args=[]):
         run_env = {
+            'SOURCEKIT_DISABLE_SEMA_EDITOR_DELAY': '',
             'SK_STRESS_TEST': self.stress_tester,
             'SK_STRESS_SWIFTC': self.swiftc,
             'SK_STRESS_SILENT': '',
@@ -331,7 +332,7 @@ class StressTesterRunner(object):
         run_env.update(os.environ)
         filtered_projects_json = projects_json #self._rewrite_projects_json(projects_json, os.path.join(script_dir, 'stress-tester-projects.json'))
 
-        run_cmd = ['python', '-u', 'runner.py', '--projects', filtered_projects_json, '--verbose', '--swiftc', self.wrapper, '--swift-branch', swift_branch, '--default-timeout', str(180*60), '--include-actions', '"tags" in locals() and "sourcekit" in tags.split()',  '--only-latest-versions']
+        run_cmd = ['python', '-u', 'runner.py', '--projects', filtered_projects_json, '--verbose', '--swiftc', self.wrapper, '--swift-branch', swift_branch, '--default-timeout', str(180*60), '--include-actions', '"tags" in locals() and "sourcekit" in tags.split()', '--only-latest-versions']
         if extra_runner_args:
             run_cmd.extend(extra_runner_args)
 
