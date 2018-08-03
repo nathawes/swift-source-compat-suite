@@ -2392,7 +2392,7 @@
       {
         "action": "BuildSwiftPackage",
         "configuration": "release",
-        "tags": "sourcekit",
+        "tags": "sourcekit"
       },
       {
         "action": "TestSwiftPackage"
