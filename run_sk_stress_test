@@ -330,9 +330,10 @@ class StressTesterRunner(object):
             'SK_STRESS_SILENT': '',
             'SK_STRESS_CODECOMPLETE_LIMIT': '1000' }
         run_env.update(os.environ)
-        filtered_projects_json = projects_json #self._rewrite_projects_json(projects_json, os.path.join(script_dir, 'stress-tester-projects.json'))
+        filtered_projects_json = self._rewrite_projects_json(projects_json, os.path.join(script_dir, 'stress-tester-projects.json'))
 
-        run_cmd = ['python', '-u', 'runner.py', '--projects', filtered_projects_json, '--verbose', '--swiftc', self.wrapper, '--swift-branch', swift_branch, '--default-timeout', str(180*60), '--include-actions', '"tags" in locals() and "sourcekit" in tags.split()', '--only-latest-versions']
+        run_cmd = ['python', '-u', 'runner.py', '--projects', filtered_projects_json, '--verbose', '--swiftc', self.wrapper, '--swift-branch', swift_branch, '--default-timeout', str(180*60), '--include-actions', '"tags" in locals() and "sourcekit" in tags.split()', '--only-latest-versions', '--add-xcodebuild-flags', 'ARCHS={archs_override}']
+
         if extra_runner_args:
             run_cmd.extend(extra_runner_args)
 
@@ -430,9 +431,9 @@ Or to mark all failures in a directory as expected, use a wildcard:
         with open(current) as json_file:
             projects = json.load(json_file)
             for project in projects:
-                actions = [action for action in project['actions'] if action['action'].startswith("Build")]
-                project['actions'] = actions[0:1] if actions else []
-        
+                for action in project['actions']:
+                    action['archs_override'] = 'arm64' if action.get('destination') == 'generic/platform=iOS' else '$ARCHS'
+
         with open(output, 'w') as outfile:
             json.dump(projects, outfile, indent=4)
         return output

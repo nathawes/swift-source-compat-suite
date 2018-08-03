@@ -33,7 +33,7 @@
     "issue": "rdar://problem/41100570"
   },
   {
-    "branches": ["master"],
+    "branches": [],
     "failure": "crashed",
     "file": "BlueSocket/Sources/SocketProtocols.swift",
     "offset": 3726,
@@ -56,6 +56,15 @@
     "file": "Chatto/Chatto/Source/Chat Items/ChatItemCompanion.swift",
     "offset": 1580,
     "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"], 
+    "request": "RangeInfo", 
+    "failure": "crashed", 
+    "length": 34, 
+    "file": "Chatto/ChattoAdditions/Source/Chat Items/BaseMessage/Views/BaseMessageCollectionViewCell.swift", 
+    "offset": 8369, 
+    "issue": "<issue url>"
   },
   {
     "branches": ["master"],
@@ -327,6 +336,14 @@
     "issue": "rdar://problem/41219750"
   },
   {
+    "failure": "crashed", 
+    "branches": ["master"], 
+    "file": "Kickstarter-Prelude/Prelude-UIKit/UIButton.swift", 
+    "offset": 339, 
+    "request": "CursorInfo", 
+    "issue": "<issue url>"
+  },
+  {
     "branches": ["swift-4.2-branch"],
     "failure": "crashed",
     "file": "Kickstarter-ReactiveExtensions/Frameworks/ReactiveSwift/Sources/Action.swift",
@@ -335,12 +352,20 @@
     "issue": "rdar://problem/42448618"
   },
   {
-    "branches": ["master"],
+    "branches": [],
     "failure": "crashed",
     "file": "Kingfisher/Sources/AnimatedImageView.swift",
     "offset": 2897,
     "request": "CursorInfo",
     "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "Kingfisher/Sources/CacheSerializer.swift", 
+    "offset": 2949, 
+    "request": "CursorInfo", 
+    "issue": "<issue url>"
   },
   {
     "branches": ["swift-4.2-branch"],
@@ -486,6 +511,15 @@
     "issue": "rdar://problem/41147733"
   },
   {
+    "branches": ["master"], 
+    "request": "RangeInfo", 
+    "failure": "crashed", 
+    "length": 11, 
+    "file": "ProcedureKit/Sources/ProcedureKitCloud/CloudKit.swift", 
+    "offset": 554, 
+    "issue": "<issue url>"
+  },
+  {
     "branches": ["master"],
     "failure": "crashed",
     "file": "PromiseKit/Sources/AnyPromise.swift",
@@ -584,6 +618,31 @@
     "issue": "rdar://problem/41593893"
   },
   {
+    "branches": ["master"], 
+    "request": "RangeInfo", 
+    "failure": "crashed", 
+    "length": 18, 
+    "file": "RxSwift/RxCocoa/Common/Binder.swift", 
+    "offset": 1147, 
+    "issue": "<issue url>"
+  },
+  {
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "RxSwift/RxBlocking/Platform/Platform.Linux.swift", 
+    "offset": 2067, 
+    "request": "CodeComplete", 
+    "issue": "<issue url>"
+  },
+  {
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "RxSwift/RxTest/Platform/DeprecationWarner.swift", 
+    "offset": 678, 
+    "request": "CodeComplete", 
+    "issue": "<issue url>"
+  },
+  {
     "branches": ["master"],
     "request": "CursorInfo",
     "failure": "crashed",
@@ -669,7 +728,15 @@
     "issue": "rdar://problem/41147733"
   },
   {
-    "branches": ["master"],
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "SwifterSwift/Sources/Extensions/AppKit/NSImageExtensions.swift", 
+    "offset": 2227, 
+    "request": "CursorInfo", 
+    "issue": "<issue url>"
+  },
+  {
+    "branches": [""],
     "failure": "crashed",
     "file": "SwifterSwift/Sources/Extensions/SwiftStdlib/CharacterExtensions.swift",
     "offset": 3695,
