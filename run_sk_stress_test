@@ -242,7 +242,7 @@ class FailureKind(object):
 class FailureManager(object):
     """parses and manages failures reported by the SourceKit stress tester."""
 
-    _error_matcher = re.compile(r'\[sk-stress-test\] error: (?P<failure>[^ ]+) invoking SourceKit request (?P<request>[^ ]+)(?: \((?P<refactoring>[^\)]+)\))? in .*/project_cache/(?P<file>.+\.swift) a[ts] offset (?P<offset>\d+)(?: for length (?P<length>\d+))? with args:')
+    _error_matcher = re.compile(r'\[sk-stress-test\] error: (?P<failure>[^ ]+) invoking SourceKit request (?P<request>[^ ]+)(?: \((?P<refactoring>[^\)]+)\))? [oi]n .*/project_cache/(?P<file>.+\.swift)(?: a[ts] offset (?P<offset>\d+)(?: for length (?P<length>\d+))? with args:.*)?$')
 
     def __init__(self, xfails_path, swift_branch):
         self.swift_branch = swift_branch
