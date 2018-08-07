@@ -65,6 +65,10 @@ def parse_args():
                         metavar='PATH',
                         help='JSON project file',
                         default='projects.json')
+    parser.add_argument('--filter-by-tag',
+                        metavar='TAG',
+                        help='Only run project actions with the given tag',
+                        default='sourcekit')
     parser.add_argument('--sourcekit-xfails',
                         metavar='PATH',
                         help='JSON file specifying expected sourcekit failures',
@@ -166,6 +170,9 @@ def execute_runner(workspace, args):
     if args.add_xcodebuild_flags:
         extra_runner_args += ['--add-xcodebuild-flags=%s' % args.add_xcodebuild_flags]
 
+    if args.filter_by_tag:
+        extra_runner_args += ['--include-actions', '"tags" in locals() and "{}" in tags.split()'.format(args.filter_by_tag)]
+
 
     failure_manager = FailureManager(args.sourcekit_xfails, args.swift_branch)
     runner = StressTesterRunner(wrapper_link, get_stress_test_path(workspace), swiftc_path, failure_manager)
@@ -243,11 +250,13 @@ class FailureManager(object):
     """parses and manages failures reported by the SourceKit stress tester."""
 
     _error_matcher = re.compile(r'\[sk-stress-test\] error: (?P<failure>[^ ]+) invoking SourceKit request (?P<request>[^ ]+)(?: \((?P<refactoring>[^\)]+)\))? [oi]n .*/project_cache/(?P<file>.+\.swift)(?: a[ts] offset (?P<offset>\d+)(?: for length (?P<length>\d+))? with args:.*)?$')
+    _seen_matcher = re.compile(r'\[sk-stress-test\] \[\d+/\d+\] Stress testing .*/project_cache/(?P<file>.+\.swift):$')
 
     def __init__(self, xfails_path, swift_branch):
         self.swift_branch = swift_branch
         self.xfails_path = xfails_path
         self.xfails = self._load_applicable_xfails(xfails_path, swift_branch) if xfails_path else []
+        self.seen_files = []
         self.expected = []
         self.unexpected = []
         self.unrecognized_errors = []
@@ -257,6 +266,11 @@ class FailureManager(object):
         if not match:
             if line.startswith("[sk-stress-test] error:"):
                 self.unrecognized_errors.append(line)
+            else:
+                # keep track of files we actually stress test so we don't report unmatched xfails in files we didn't see
+                progress = self._seen_matcher.search(line)
+                if progress:
+                    self.seen_files.append(progress.groupdict()['file'])
             return FailureKind.NONE, None
 
         failure = {key: value for key, value in match.groupdict().items() if value is not None}
@@ -275,7 +289,7 @@ class FailureManager(object):
 
     @property
     def unmatched_xfails(self):
-        return [xfail for xfail in self.xfails if not xfail.get('_seen', False)]
+        return [xfail for xfail in self.xfails if not xfail.get('_matched', False) and self._saw_matching_file(xfail.get('file'))]
 
     def write_failures(self, path, update=False):
         with open(path, 'w') as json_out:
@@ -286,16 +300,21 @@ class FailureManager(object):
     def _is_expected_failure(self, failure):
         return any(self._xfail_matches(failure, xfail) for xfail in self.xfails)
 
+    def _saw_matching_file(self, xfail_file):
+        if not xfail_file:
+            return True
+        return any(re.match(self._wildcard_to_regex(xfail_file), seen_file) for seen_file in self.seen_files)
+
     @classmethod
     def _xfail_matches(cls, failure, xfail):
       for key, value in xfail.items():
-        if key in ["issue", "branches", "_seen"]:
+        if key in ["issue", "branches", "_matched"]:
           continue
         if key in failure and re.match(cls._wildcard_to_regex(str(value)), str(failure[key])):
           continue
         return False
 
-      xfail['_seen'] = True
+      xfail['_matched'] = True
       if 'issue' in xfail:
         failure['issue'] = xfail['issue']
       return True
@@ -332,7 +351,15 @@ class StressTesterRunner(object):
         run_env.update(os.environ)
         filtered_projects_json = self._rewrite_projects_json(projects_json, os.path.join(script_dir, 'stress-tester-projects.json'))
 
-        run_cmd = ['python', '-u', 'runner.py', '--projects', filtered_projects_json, '--verbose', '--swiftc', self.wrapper, '--swift-branch', swift_branch, '--default-timeout', str(180*60), '--include-actions', '"tags" in locals() and "sourcekit" in tags.split()', '--only-latest-versions', '--add-xcodebuild-flags', 'ARCHS={archs_override}']
+        run_cmd = ['python', '-u', 'runner.py',
+          '--projects', filtered_projects_json,
+          '--verbose',
+          '--swiftc', self.wrapper,
+          '--swift-branch', swift_branch,
+          '--default-timeout', str(180*60),
+          '--only-latest-versions',
+          # archs overrie is set to arm64 for generic/iOS actions that would otherwise invoke the stress tester for both arm64 and armv7
+          '--add-xcodebuild-flags', 'ARCHS={archs_override}']
 
         if extra_runner_args:
             run_cmd.extend(extra_runner_args)
@@ -432,6 +459,8 @@ Or to mark all failures in a directory as expected, use a wildcard:
             projects = json.load(json_file)
             for project in projects:
                 for action in project['actions']:
+                    # This is used in combination with --add-xcodebuild-flags to prevent running the stress tester over the same files twice.
+                    # generic/iOS actions invoke the wrapper for both arm64 and armv7, which makes little difference for the stress tester.
                     action['archs_override'] = 'arm64' if action.get('destination') == 'generic/platform=iOS' else '$ARCHS'
 
         with open(output, 'w') as outfile:

@@ -49,7 +49,7 @@
     "issue": "rdar://problem/41100570"
   },
   {
-    "branches": ["master", "swift-4.2-branch"],
+    "branches": ["swift-4.2-branch"],
     "request": "RangeInfo",
     "failure": "crashed",
     "length": 12,
@@ -59,12 +59,28 @@
   },
   {
     "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "Chatto/Chatto/Source/ChatController/BaseChatViewController+AccessoryViewRevealer.swift", 
+    "offset": 1308, 
+    "request": "CursorInfo", 
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"], 
     "request": "RangeInfo", 
     "failure": "crashed", 
     "length": 34, 
     "file": "Chatto/ChattoAdditions/Source/Chat Items/BaseMessage/Views/BaseMessageCollectionViewCell.swift", 
     "offset": 8369, 
-    "issue": "<issue url>"
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "Chatto/ChattoAdditions/Source/Chat Items/BaseMessage/BaseMessagePresenter.swift", 
+    "offset": 2076, 
+    "request": "CodeComplete", 
+    "issue": "rdar://problem/43014272"
   },
   {
     "branches": ["master"],
@@ -101,13 +117,21 @@
     "issue": "rdar://problem/41147733"
   },
   {
-    "branches": ["master", "swift-4.2-branch"],
+    "branches": ["swift-4.2-branch"],
     "request": "RangeInfo",
     "failure": "crashed",
     "length": 13,
     "file": "cub/Sources/Cub/AST/Nodes/ArrayNode.swift",
     "offset": 758,
     "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "cub/Sources/Cub/Runner/Runner.swift", 
+    "offset": 2277, 
+    "request": "CursorInfo", 
+    "issue": "rdar://problem/41593893"
   },
   {
     "branches": ["master"],
@@ -144,7 +168,15 @@
     "issue": "rdar://problem/41100570"
   },
   {
-    "branches": ["master", "swift-4.2-branch"],
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "Dollar/Sources/AutoCurry.swift", 
+    "offset": 219, 
+    "request": "CodeComplete", 
+    "issue": "https://bugs.swift.org/browse/SR-8470"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
     "request": "RangeInfo",
     "failure": "crashed",
     "length": 18,
@@ -161,7 +193,7 @@
     "issue": "rdar://problem/41593893"
   },
   {
-    "branches": ["master", "swift-4.2-branch"],
+    "branches": ["swift-4.2-branch"],
     "request": "RangeInfo",
     "failure": "crashed",
     "length": 17,
@@ -170,7 +202,7 @@
     "issue": "rdar://problem/41147733"
   },
   {
-    "branches": ["master", "swift-4.2-branch"],
+    "branches": ["swift-4.2-branch"],
     "request": "RangeInfo",
     "failure": "crashed",
     "length": 24,
@@ -179,21 +211,20 @@
     "issue": "rdar://problem/41147733"
   },
   {
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "Evergreen/submodules/RSWeb/RSWeb/DownloadSession.swift", 
+    "offset": 2246, 
+    "request": "CodeComplete", 
+    "issue": "https://bugs.swift.org/browse/SR-8471"
+  },
+  {
     "branches": ["swift-4.2-branch"],
     "failure": "crashed",
     "file": "Evergreen/Frameworks/Data/DatabaseID.swift",
     "offset": 488,
     "request": "CursorInfo",
     "issue": "rdar://problem/41100570"
-  },
-  {
-    "branches": ["master"],
-    "request": "RangeInfo",
-    "failure": "crashed",
-    "length": 34,
-    "file": "Evergreen/Frameworks/Data/UnreadCountProvider.swift",
-    "offset": 933,
-    "issue": "rdar://problem/41147733"
   },
   {
     "branches": ["master"],
@@ -311,7 +342,7 @@
     "issue": "rdar://problem/41175473"
   },
   {
-    "branches": ["master", "swift-4.2-branch"],
+    "branches": ["swift-4.2-branch"],
     "request": "RangeInfo",
     "failure": "crashed",
     "length": 26,
@@ -341,7 +372,15 @@
     "file": "Kickstarter-Prelude/Prelude-UIKit/UIButton.swift", 
     "offset": 339, 
     "request": "CursorInfo", 
-    "issue": "<issue url>"
+    "issue": "rdar://problem/41593893"
+  },
+  {
+    "branches": ["swift-4.2-branch"], 
+    "failure": "crashed", 
+    "file": "Kickstarter-Prelude/Prelude-UIKit/UIImage.swift", 
+    "offset": 309, 
+    "request": "CursorInfo", 
+    "issue": "rdar://problem/41100570"
   },
   {
     "branches": ["swift-4.2-branch"],
@@ -365,7 +404,7 @@
     "file": "Kingfisher/Sources/CacheSerializer.swift", 
     "offset": 2949, 
     "request": "CursorInfo", 
-    "issue": "<issue url>"
+    "issue": "rdar://problem/41593893"
   },
   {
     "branches": ["swift-4.2-branch"],
@@ -373,7 +412,7 @@
     "file": "Kingfisher/Sources/Image.swift",
     "offset": 21272,
     "request": "CursorInfo",
-    "issue": "<issue url>"
+    "issue": "rdar://problem/41100570"
   },
   {
     "branches": ["swift-4.2-branch"],
@@ -511,13 +550,21 @@
     "issue": "rdar://problem/41147733"
   },
   {
-    "branches": ["master"], 
+    "branches": ["swift-4.2-branch"], 
     "request": "RangeInfo", 
     "failure": "crashed", 
     "length": 11, 
     "file": "ProcedureKit/Sources/ProcedureKitCloud/CloudKit.swift", 
     "offset": 554, 
-    "issue": "<issue url>"
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"],
+    "failure": "crashed",  
+    "file": "ProcedureKit/Sources/ProcedureKitCloud/CloudKit.swift", 
+    "offset": 349, 
+    "request": "CodeComplete", 
+    "issue": "rdar://problem/43014272"
   },
   {
     "branches": ["master"],
@@ -602,6 +649,14 @@
     "issue": "rdar://problem/41147733"
   },
   {
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "ReSwift/ReSwift/Utils/Assertions.swift", 
+    "offset": 999, 
+    "request": "CodeComplete", 
+    "issue": "https://bugs.swift.org/browse/SR-8470"
+  },
+  {
     "branches": ["swift-4.2-branch"],
     "failure": "crashed",
     "file": "RxSwift/RxSwift/Concurrency/AsyncLock.swift",
@@ -618,13 +673,21 @@
     "issue": "rdar://problem/41593893"
   },
   {
-    "branches": ["master"], 
+    "branches": ["swift-4.2-branch"], 
     "request": "RangeInfo", 
     "failure": "crashed", 
     "length": 18, 
     "file": "RxSwift/RxCocoa/Common/Binder.swift", 
     "offset": 1147, 
-    "issue": "<issue url>"
+    "issue": "rdar://problem/41147733"
+  },
+  {
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "RxSwift/RxCocoa/Common/Binder.swift", 
+    "offset": 878, 
+    "request": "CodeComplete", 
+    "issue": "rdar://problem/43008573"
   },
   {
     "branches": ["master"], 
@@ -632,15 +695,23 @@
     "file": "RxSwift/RxBlocking/Platform/Platform.Linux.swift", 
     "offset": 2067, 
     "request": "CodeComplete", 
-    "issue": "<issue url>"
+    "issue": "https://bugs.swift.org/browse/SR-8474"
   },
   {
-    "branches": ["master"], 
+    "branches": ["swift-4.2-branch"], 
+    "failure": "crashed", 
+    "file": "RxSwift/RxBlocking/BlockingObservable+Operators.swift", 
+    "offset": 4157, 
+    "request": "CursorInfo", 
+    "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master", "swift-4.2-branch"], 
     "failure": "crashed", 
     "file": "RxSwift/RxTest/Platform/DeprecationWarner.swift", 
     "offset": 678, 
     "request": "CodeComplete", 
-    "issue": "<issue url>"
+    "issue": "https://bugs.swift.org/browse/SR-8474"
   },
   {
     "branches": ["master"],
@@ -668,7 +739,15 @@
     "issue": "rdar://problem/41100570"
   },
   {
-    "branches": ["master", "swift-4.2-branch"],
+    "failure": "crashed", 
+    "branches": ["master"], 
+    "file": "Starscream/Sources/Compression.swift", 
+    "offset": 2179, 
+    "request": "CodeComplete", 
+    "issue": "https://bugs.swift.org/browse/SR-8475"
+  },
+  {
+    "branches": ["swift-4.2-branch"],
     "request": "RangeInfo",
     "failure": "crashed",
     "length": 15,
@@ -733,24 +812,7 @@
     "file": "SwifterSwift/Sources/Extensions/AppKit/NSImageExtensions.swift", 
     "offset": 2227, 
     "request": "CursorInfo", 
-    "issue": "<issue url>"
-  },
-  {
-    "branches": [""],
-    "failure": "crashed",
-    "file": "SwifterSwift/Sources/Extensions/SwiftStdlib/CharacterExtensions.swift",
-    "offset": 3695,
-    "request": "CodeComplete",
-    "issue": "https://bugs.swift.org/browse/SR-8396"
-  },
-  {
-    "branches": ["swift-4.2-branch"],
-    "request": "RangeInfo",
-    "failure": "crashed",
-    "length": 26,
-    "file": "SwifterSwift/Sources/Extensions/UIKit/UIAlertControllerExtensions.swift",
-    "offset": 3935,
-    "issue": "rdar://problem/41147733"
+    "issue": "rdar://problem/41593893"
   },
   {
     "branches": ["swift-4.2-branch"],
@@ -759,6 +821,14 @@
     "offset": 2633,
     "request": "CursorInfo",
     "issue": "rdar://problem/41100570"
+  },
+  {
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "swift-nio/Sources/NIOFoundationCompat/ByteBuffer-foundation.swift", 
+    "offset": 1581, 
+    "request": "CodeComplete", 
+    "issue": "https://bugs.swift.org/browse/SR-8475"
   },
   {
     "branches": ["master"],
@@ -793,30 +863,12 @@
     "issue": "rdar://problem/41100570"
   },
   {
-    "branches": ["master"],
-    "request": "RangeInfo",
-    "failure": "crashed",
-    "length": 16,
-    "file": "swift-nio/Sources/NIOEchoServer/main.swift",
-    "offset": 2116,
-    "issue": "rdar://problem/41147733"
-  },
-  {
     "branches": ["swift-4.2-branch"],
     "failure": "crashed",
     "file": "swift-nio/Sources/NIOChatClient/main.swift",
     "offset": 1522,
     "request": "CursorInfo",
     "issue": "rdar://problem/41100570"
-  },
-  {
-    "branches": ["master"],
-    "request": "RangeInfo",
-    "failure": "crashed",
-    "length": 16,
-    "file": "swift-nio/Sources/NIOChatClient/main.swift",
-    "offset": 1454,
-    "issue": "rdar://problem/41147733"
   },
   {
     "branches": ["swift-4.2-branch"],
@@ -827,15 +879,6 @@
     "issue": "rdar://problem/41100570"
   },
   {
-    "branches": ["master"],
-    "request": "RangeInfo",
-    "failure": "crashed",
-    "length": 16,
-    "file": "swift-nio/Sources/NIOEchoClient/main.swift",
-    "offset": 2132,
-    "issue": "rdar://problem/41147733"
-  },
-  {
     "branches": ["swift-4.2-branch"],
     "failure": "crashed",
     "file": "swift-nio/Sources/NIOChatServer/main.swift",
@@ -844,13 +887,12 @@
     "issue": "rdar://problem/41100570"
   },
   {
-    "branches": ["master"],
-    "request": "RangeInfo",
-    "failure": "crashed",
-    "length": 17,
-    "file": "swift-nio/Sources/NIOChatServer/main.swift",
-    "offset": 3542,
-    "issue": "rdar://problem/41147733"
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "swift-nio/Sources/NIOChatServer/main.swift", 
+    "offset": 7788, 
+    "request": "CodeComplete", 
+    "issue": "rdar://problem/43008573"
   },
   {
     "branches": ["swift-4.2-branch"],
@@ -877,30 +919,12 @@
     "issue": "rdar://problem/41100570"
   },
   {
-    "branches": ["master"],
-    "request": "RangeInfo",
-    "failure": "crashed",
-    "length": 16,
-    "file": "swift-nio/Sources/NIOHTTP1Server/main.swift",
-    "offset": 23081,
-    "issue": "rdar://problem/41147733"
-  },
-  {
     "branches": ["swift-4.2-branch"],
     "failure": "crashed",
     "file": "swift-nio/Sources/NIOPerformanceTester/main.swift",
     "offset": 4028,
     "request": "CursorInfo",
     "issue": "rdar://problem/41100570"
-  },
-  {
-    "branches": ["master"],
-    "request": "RangeInfo",
-    "failure": "crashed",
-    "length": 16,
-    "file": "swift-nio/Sources/NIOPerformanceTester/main.swift",
-    "offset": 4352,
-    "issue": "rdar://problem/41147733"
   },
   {
     "branches": ["master"],
@@ -919,13 +943,12 @@
     "issue": "rdar://problem/41100570"
   },
   {
-    "branches": ["master"],
-    "request": "RangeInfo",
-    "failure": "crashed",
-    "length": 16,
-    "file": "swift-nio/Sources/NIOWebSocketServer/main.swift",
-    "offset": 7736,
-    "issue": "rdar://problem/41147733"
+    "branches": ["master"], 
+    "failure": "crashed", 
+    "file": "swift-nio/Sources/NIOWebSocketServer/main.swift", 
+    "offset": 2514, 
+    "request": "CodeComplete", 
+    "issue": "rdar://problem/43008573"
   },
   {
     "branches": ["master"],

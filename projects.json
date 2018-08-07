@@ -505,6 +505,7 @@
       {
         "action": "BuildSwiftPackage",
         "configuration": "release",
+        "tags": "sourcekit",
         "xfail": {
           "compatibility": {
             "4.0": {
@@ -513,8 +514,7 @@
               }
             }
           }
-        },
-        "tags": "sourcekit"
+        }
       },
       {
         "action": "BuildXcodeProjectScheme",
@@ -1935,7 +1935,7 @@
         "scheme": "RxSwift-macOS",
         "destination": "platform=macOS",
         "configuration": "Release",
-        "tags": "sourcekit"
+        "tags": "sourcekit sourcekit-smoke"
       },
       {
         "action": "BuildXcodeWorkspaceScheme",
@@ -1964,7 +1964,7 @@
         "scheme": "RxCocoa-macOS",
         "destination": "platform=macOS",
         "configuration": "Release",
-        "tags": "sourcekit"
+        "tags": "sourcekit sourcekit-smoke"
       },
       {
         "action": "BuildXcodeWorkspaceScheme",
